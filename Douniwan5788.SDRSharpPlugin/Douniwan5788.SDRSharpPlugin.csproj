@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Douniwan5788.SDRSharpPlugin</RootNamespace>
+    <AssemblyName>Douniwan5788.SDRSharpPlugin</AssemblyName>
+    <TargetFramework>net4.6-windows</TargetFramework>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <!-- <ImplicitUsings>enable</ImplicitUsings> -->
+    <!-- <Nullable>enable</Nullable> -->
+    <LangVersion>10.0</LangVersion>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <UseWindowsForms>true</UseWindowsForms>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <PreserveCompilationContext>false</PreserveCompilationContext>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Deterministic>False</Deterministic>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- <Reference Include="SDRSharp">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SDRSharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference> -->
+    <Reference Include="SDRSharp.Common">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SDRSharp.Common.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="SDRSharp.Radio">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\SDRSharp.Radio.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+</Project>
